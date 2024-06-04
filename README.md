@@ -1,7 +1,7 @@
 # Fandom Scraper
 Fandom provides wiki data at https://examplename.fandom.com/wiki/Special:Statistics, but most fandoms are either out of date or completely missing wiki dumps.
 
-This script scrapes the data of a provided fandom(s) and provides it in .jsonl format with the source url and text on that page. This data is useful for many downstream NLP tasks.
+This script scrapes the data of a provided fandom(s) and provides it in .jsonl format with the source url and text on that page. This data is useful for many downstream NLP tasks. I uploaded an example of some wiki pages as a dataset on Kaggle: https://www.kaggle.com/datasets/jonathanluo101/fandom-wiki-page-content
 
 ## How It Works
 
@@ -15,3 +15,4 @@ Example
 ```sh
 python run.py genshin-impact hibike-euphonium
 ```
+
