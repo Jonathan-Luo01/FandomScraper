@@ -50,7 +50,6 @@ def process_files(input_dir, output):
 
                 # Text processing
                 df['text'] = df['text'].apply(initial_preprocess)
-                df = df.replace({"url": "source"})
                 df = df[~df['text'].str.contains("Image Gallery &lt;tabber&gt")]  # Drop all image gallery pages
                 df = df.dropna(subset=['text'])  # Drops all rows with None type
                 df = df[df['text'].str.strip() != '']  # Drops all rows with empty string
